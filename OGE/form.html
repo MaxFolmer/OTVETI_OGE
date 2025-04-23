@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Регистрация</title>
+  <link rel="stylesheet" href="./styles.css"/>
+</head>
+<body>
+  <form id="form" class="pizza-form" novalidate>
+    <h1>Регистрация</h1>
+
+    <label class="form_label">Имя:
+      <input required id="name-input" class="form_input pizza-input" type="text" pattern="[A-Za-zА-Яа-яЁё\s]{2,}" placeholder="Максим" data-error-message="Только буквы, минимум 2 символа" />
+      <span class="name-input-error form__input-error"></span>
+    </label>
+
+    <label class="form_label">Email:
+      <input required id="email-input" class="form_input pizza-input" type="email" placeholder="user@domain.com" data-error-message="Введите корректный email, например: user@domain.com" />
+      <span class="email-input-error form__input-error"></span>
+    </label>
+
+    <label class="form_label">Номер телефона:
+      <input required id="phone-input" class="form_input pizza-input" type="tel" placeholder="+7 (123) 456 78 90" data-error-message="Введите корректный номер телефона">
+      <span class="phone-input-error form__input-error"></span>
+    </label>
+    <label class="form_label">Платёжная система:
+      <select required id="payment-input" class="form_input pizza-input">
+        <option value="" disabled selected hidden>Выберите</option>
+        <option>Visa</option>
+        <option>Mastercard</option>
+        <option>Мир</option>
+      </select>
+      <span class="payment-input-error form__input-error"></span>
+    </label>
+
+    <label class="form_label">Номер карты:
+      <input required id="card-input" class="form_input pizza-input" type="text" pattern="^(\d{4}[\s\-]?){3}\d{4}$" maxlength="19" placeholder="1234 1234 1234 1234" data-error-message="16 цифр, можно с пробелами или дефисами" />
+      <span class="card-input-error form__input-error"></span>
+    </label>
+
+    <button id="submit-btn" class="form__submit btn__submit_disabled" disabled>Зарегистрироваться
+    </button>
+  </form>
+
+  <script src="./form.js"></script>
+  <!-- <script src="./script.js"></script> -->
+</body>
+</html>
