@@ -7,7 +7,19 @@
   <link rel="stylesheet" href="./styles.css"/>
 </head>
 <body>
-  <form id="form" class="pizza-form" novalidate>
+  <div class="container">
+    <header>
+      <div class="logo"><a href="./index.html"><img src="./images/photo_2025-04-21 22.27.57 1.png" class="logo">
+      </a></div>
+      <div class="header-controls">
+        <div class="menu-icon"> 
+          <span></span><span></span><span></span>
+        </div>
+      </div>
+    </header>
+  </div>
+
+  <form id="form" class="pizza-form" action="./index.html" novalidate>
     <h1>Регистрация</h1>
 
     <label class="form_label">Имя:
@@ -39,11 +51,9 @@
       <span class="card-input-error form__input-error"></span>
     </label>
 
-    <button id="submit-btn" class="form__submit btn__submit_disabled" disabled>Зарегистрироваться
-    </button>
+    <a href="./index.html"><button id="submit-btn" class="form__submit btn__submit_disabled" disabled>Зарегистрироваться</button></a>
   </form>
 
   <script src="./form.js"></script>
-  <!-- <script src="./script.js"></script> -->
 </body>
 </html>
