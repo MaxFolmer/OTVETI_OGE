@@ -35,6 +35,44 @@ select:required:invalid {
     border: 2px solid #26b300;
   }
 
+.container {
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
+
+  header {
+    background-color: #2196f3;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+  
+  .logo {
+    height: 70px;
+    width: 80px;
+  }
+
+  .menu-icon {
+    width: 24px;
+    height: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+  }
+  
+  .menu-icon span {
+    height: 3px;
+    background-color: white;
+    border-radius: 2px;
+  }
+
   
 
 .form_input:valid {
