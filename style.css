@@ -95,6 +95,12 @@
     color: white;
     text-decoration: none;
   }
+  
+  .btn-a:visited {
+      color: white;
+      text-decoration: none;
+  }
+
   .reviews {
     padding: 20px;
   }
