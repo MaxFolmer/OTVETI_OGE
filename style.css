@@ -86,21 +86,23 @@
     cursor: pointer;
     width: 250px;
     height: 80px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
   }
   
   .button:hover {
     background-color: #1976d2;
   }
-  .btn-a {
+.btn-a {
     color: white;
     text-decoration: none;
-  }
-  
-  .btn-a:visited {
-      color: white;
-      text-decoration: none;
-  }
+}
 
+.btn-a:visited {
+    color: white;
+    text-decoration: none;
+}
   .reviews {
     padding: 20px;
   }
@@ -276,3 +278,4 @@
         margin: 0;
     }
   }
+  
