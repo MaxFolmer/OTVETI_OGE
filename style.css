@@ -1,6 +1,4 @@
-* {
 
-  }
   
   html, body {
      max-height: 100vw;
@@ -30,12 +28,6 @@
   }
   
   .logo {
-    /* background-color: white; */
-    /* padding: 5px 10px; */
-    /* font-weight: bold;
-    font-size: 24px;
-    color: #2196f3;
-    font-family: Arial, sans-serif; */
     height: 70px;
     width: 80px;
   }
@@ -99,7 +91,10 @@
   .button:hover {
     background-color: #1976d2;
   }
-  
+  .btn-a {
+    color: white;
+    text-decoration: none;
+  }
   .reviews {
     padding: 20px;
   }
@@ -199,7 +194,7 @@
   
     .logo {
       font-size: 20px;
-      padding: 3px 8px;
+      padding: 0 8px;
     }
   
     .register-button {
@@ -275,4 +270,3 @@
         margin: 0;
     }
   }
-  
